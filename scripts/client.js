@@ -57,9 +57,6 @@ myScrabbleTiles.push( { tile: 'F', score : 4 } );
 console.log(myScrabbleTiles);
 
 
-console.log(myScrabbleTiles[0]);
-
-
 // 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop and return the sum of all the scores in the given array.
 console.log('6.');
 
@@ -78,13 +75,28 @@ function sumTiles( anArray ) {
 //Test Call
 console.log( sumTiles( myScrabbleTiles ) );
 
-
-
-
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called "myScore".
+console.log('7.');
+
+let myScore = sumTiles( myScrabbleTiles );
+console.log( myScore );
+
 
 
 // 8. Check whether or not your score is higher than the highScore.
+console.log('8.');
+
+if ( myScore > highScore ){
+    highScore = myScore;
+    console.log( highScore );
+
+    console.log('I beat the High Score!!');
+
+}else if ( myScore < highScore ){
+    console.log("I didn't beat the high score :( .");
+}else {
+    console.log('I tied the high score.')
+}
 // 8-1 If your score is higher, change highScore to the new high score.
 
 
