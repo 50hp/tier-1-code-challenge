@@ -32,12 +32,12 @@ console.log(myScrabbleTiles);
 */
 console.log('3.');
 
-myScrabbleTiles = [{ tile: 'N', score: 1 },
+myScrabbleTiles.push( [{ tile: 'N', score: 1 },
                    { tile: 'K', score: 5 },
                    { tile: 'Z', score: 10 },
                    { tile: 'X', score: 8 },
                    { tile: 'D', score: 2 },
-                   { tile: 'A', score: 1 }]
+                   { tile: 'A', score: 1 } ] ) ;
 console.log(myScrabbleTiles);
 
 // 4. Remove the last tile from myScrabbleTiles.
